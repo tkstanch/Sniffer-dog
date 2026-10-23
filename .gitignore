@@ -16,4 +16,9 @@ mobile/pubspec.lock
 node_modules/
 .vscode/
 .idea/
-.DS_Store
+.DS_Storebackend/db.sqlite3
+backend/*.sqlite3
+backend/venv/
+__pycache__/
+*.pyc
+.env
