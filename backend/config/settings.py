@@ -112,3 +112,6 @@ TWILIO_ACCOUNT_SID = env("TWILIO_ACCOUNT_SID", default="")
 TWILIO_AUTH_TOKEN = env("TWILIO_AUTH_TOKEN", default="")
 PAYNOW_ID = env("PAYNOW_ID", default="")
 PAYNOW_KEY = env("PAYNOW_KEY", default="")
+
+
+AUTH_USER_MODEL = 'core.User'
