@@ -106,7 +106,9 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.SessionAuthentication",
     ],
 }
-
+# ---- simple shared secret for the BLE ingest endpoint ----
+# Generate once:  python -c "import secrets; print(secrets.token_urlsafe(32))"
+DETECT_API_KEY = env("DETECT_API_KEY", default="")
 # Your custom keys
 TWILIO_ACCOUNT_SID = env("TWILIO_ACCOUNT_SID", default="")
 TWILIO_AUTH_TOKEN = env("TWILIO_AUTH_TOKEN", default="")
